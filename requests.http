@@ -1,0 +1,79 @@
+### Get all categories
+GET http://localhost:3000/categories
+
+### Get category by ID
+GET http://localhost:3000/categories/2
+
+### Create a new category
+POST http://localhost:3000/categories
+Content-Type: application/json
+
+{
+  "name": "Eletrónicos"
+}
+
+### Update category
+PUT http://localhost:3000/categories/3
+Content-Type: application/json
+
+{
+  "name": "Comida"
+}
+
+### Delete category
+DELETE http://localhost:3000/categories/6
+
+# TODAS AS ROTAS DE CATEGORIES ACIMA FUNCIONAM
+
+# PRODUCTS
+
+### Get all products
+GET http://localhost:3000/products 
+
+### Get product by ID
+GET http://localhost:3000/products/3
+
+### Create a new product
+POST http://localhost:3000/products
+Content-Type: application/json
+
+{
+  "name": "Bola de futebol",
+  "categoryId": 3,
+  "quantity": 10
+}
+
+### Delete product
+DELETE http://localhost:3000/products/5
+
+# TODAS AS ROTAS DE PRODUCTS ACIMA FUNCIONAM
+
+### INVENTORIES
+### Get all inventories
+GET http://localhost:3000/inventories/
+
+### Get inventory by product ID
+GET http://localhost:3000/inventories/4
+
+### Register new quantity for a product in inventory
+POST http://localhost:3000/inventories/in
+Content-Type: application/json  
+
+{
+  "productId": 4,
+  "quantity": 50
+}
+
+### Update quantity for a product in inventory
+POST http://localhost:3000/inventories/out
+Content-Type: application/json
+
+{
+  "productId": 4,
+  "quantity": 30
+}
+
+### TRANSACTIONS
+### Get all transactions
+GET http://localhost:3000/transactions/
+
