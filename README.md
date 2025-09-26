@@ -198,6 +198,8 @@ Content-Type: application/json
 
 GET http://localhost:3000/transactions/
 
+Obs: se testado com a extensão Rest API só é necessário copiar o código acima em um arquivo http.
+
 Tipos de transação esperados:
 
 ```json
