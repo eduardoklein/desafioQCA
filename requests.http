@@ -23,9 +23,7 @@ Content-Type: application/json
 ### Delete category
 DELETE http://localhost:3000/categories/6
 
-# TODAS AS ROTAS DE CATEGORIES ACIMA FUNCIONAM
-
-# PRODUCTS
+### PRODUCTS
 
 ### Get all products
 GET http://localhost:3000/products 
@@ -46,9 +44,8 @@ Content-Type: application/json
 ### Delete product
 DELETE http://localhost:3000/products/5
 
-# TODAS AS ROTAS DE PRODUCTS ACIMA FUNCIONAM
-
 ### INVENTORIES
+
 ### Get all inventories
 GET http://localhost:3000/inventories/
 
